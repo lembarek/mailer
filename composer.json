@@ -1,0 +1,21 @@
+{
+    "name": "lembarek/mailer",
+    "description": "it send all kinds of mails",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lembarek",
+            "email": "lembarek2011@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lembarek\\Mailer\\": "src"
+         }
+    },
+    "minimum-stability": "stable",
+    "require": {},
+    "require-dev": {
+        "codeception/codeception": "^2.1"
+    }
+}
