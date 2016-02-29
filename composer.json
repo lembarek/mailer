@@ -16,6 +16,7 @@
     "minimum-stability": "stable",
     "require": {},
     "require-dev": {
-        "codeception/codeception": "^2.1"
+        "codeception/codeception": "^2.1",
+        "mockery/mockery": "^0.9.4"
     }
 }
