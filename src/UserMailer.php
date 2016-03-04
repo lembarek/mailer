@@ -16,8 +16,8 @@ class UserMailer extends Mailer
      */
     public function welcome($to)
     {
-       $subject = "welcome email";
-       $view = 'mailer::emails.welcome';
-       return $this->sendTo($to, $subject, $view);
+        $subject = "welcome email";
+        $view = 'mailer::emails.welcome';
+        return $this->sendTo($to, $subject, $view);
     }
 }

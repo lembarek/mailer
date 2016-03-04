@@ -16,9 +16,9 @@ abstract class Mailer
      * @param  array   $data
      * @return void
      */
-    public function sendTo($email, $subject, $view, $data=[])
+    public function sendTo($email, $subject, $view, $data = [])
     {
-        return \Mail::send($view, $data, function($message) use ($email, $subject){
+        return \Mail::send($view, $data, function ($message) use ($email, $subject) {
             $message->to($email)
                 ->subject($subject);
         });

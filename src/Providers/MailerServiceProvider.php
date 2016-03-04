@@ -4,7 +4,8 @@
 
 use Lembarek\Core\Providers\ServiceProvider;
 
-class MailerServiceProvider extends ServiceProvider {
+class MailerServiceProvider extends ServiceProvider
+{
 
     /**
     * Bootstrap any application services.
@@ -28,6 +29,4 @@ class MailerServiceProvider extends ServiceProvider {
     public function register()
     {
     }
-
 }
-
