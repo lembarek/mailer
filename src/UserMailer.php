@@ -16,7 +16,7 @@ class UserMailer extends Mailer
      */
     public function welcome($to)
     {
-        $subject = "welcome email";
+        $subject = trans('mailer::mail.welcome');
         $view = 'mailer::emails.welcome';
         return $this->sendTo($to, $subject, $view);
     }
@@ -29,7 +29,7 @@ class UserMailer extends Mailer
      */
     public function sendResetPasswordEmailTo($data)
     {
-        $subject = "Reset Password";
+        $subject = trans('mailer::mail.reset_password');
         $view = 'mailer::emails.resetPassword';
         return $this->sendTo($data['email'], $subject, $view, $data);
     }
